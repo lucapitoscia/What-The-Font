@@ -1,0 +1,117 @@
+/*
+Luca Pitoscia
+Friday February 2 2024
+Assignment 2: What the font
+*/
+
+/* Base styling for text to ensure all text is white for consistency and readability */
+body, p, h1, h2, .chorus, #Verse-1, #Verse-2, #Pre-Chorus, #Chorus, #Drop, #Build, .yelling, .sad, .happy, .reflective {
+    color: #FFF; /* White color for all text */
+    text-align: center; /* Centralize all text */
+    background: #121212; /* Background Color*/
+    
+}
+
+h3 { /* different rules for the headings above the lyrics to differenciate it because it was hard to see the difference. */
+    font-weight: bold; 
+    text-decoration: underline;
+}
+
+/* Emotional tone styles for specific text effects, and changing of fonts */
+.yelling {
+    font-family: 'Merriweather', serif; /* Font style 1 */
+    font-size: 1.1em; /* Slightly larger font size */
+    font-weight: bold; /* Bold for emphasis */
+    text-transform: uppercase; /* Uppercase for intensity */
+    letter-spacing: 0.1em; /* Increased spacing for clarity */
+}
+
+.sad {
+    font-family: 'Comfortaa', cursive; /* Font style 2 */
+    font-size: 1em; 
+    font-style: italic; /* Italicized for a softer tone */
+    font-weight: 300; /* Lighter font weight for subtlety */
+}
+
+.happy {
+    font-family: 'Merriweather', serif; /* Font style 1 */
+    font-size: 1.1em; /* Slightly larger for a cheerful tone */
+    font-weight: 400; 
+    letter-spacing: 0.05em; /* Subtle letter spacing */
+    font-style: italic; /* Italicized for a light-hearted feel */
+}
+
+.reflective {
+    font-family: 'Comfortaa', cursive; /* Font style 2 */
+    font-size: 0.8em; /* Smaller font size for introspection */
+    letter-spacing: -0.02em; /* Tighter letter spacing for closeness */
+    font-weight: 300; /* Lighter weight for a gentle touch */
+}
+
+
+/* Adjustments for readability and spacing with dark theme compatibility */
+section {
+    padding: 20px;
+    background: #121212; /* Slightly lighter than black for subtle contrast */
+    border: 1px solid #2f2e2e; /* Darker border for differentiation */
+    margin-bottom: 20px;
+    
+}
+
+/* Footer styling for contrast and finality with visibility adjustments */
+footer {
+    background: #121212; /* Consistent with section backgrounds for cohesiveness */
+    color: #ffffff; 
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Logo and Header Styling */
+header {
+    text-align: center; /* Center the logo image */
+    padding: 20px 0; /* Add some padding around the header */
+}
+
+.logo {
+    max-width: 150px; /* Adjust the logo size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Main Content Centering */
+main {
+    text-align: center; /* Center the text in the main section */
+}
+
+.centered-text {
+   
+    text-align: center;
+    margin: 0 auto; /* Center block elements with automatic horizontal margins */
+    width: 80%; /* Adjust the width as needed for your design */
+}
+
+/* Main Content and Video Centering */
+.video-container {
+    display: flex;
+    justify-content: center; /* Center  horizontally */
+    align-items: center; 
+    padding: 20px 0; /* Add some vertical padding */
+}
+
+/* Ensure video is not exceeding the screen width on smaller devices */
+video {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+/* added visually hidden to hide headers that i didn't want to see but i had to remove warnings on validator for missing headers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
