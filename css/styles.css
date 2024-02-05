@@ -12,12 +12,12 @@ body, p, h1, h2, .chorus, #Verse-1, #Verse-2, #Pre-Chorus, #Chorus, #Drop, #Buil
     
 }
 
-h3 { /* different rules for the headings above the lyrics to differenciate it because it was hard to see the difference. */
+h3 { /* different rules for the headings above the lyrics to differentiate it because it was hard to see the difference. */
     font-weight: bold; 
     text-decoration: underline;
 }
 
-/* Emotional tone styles for specific text effects, and changing of fonts */
+/* Emotional tone styles for specific text effects to make it easier to change each line of the lyrics to reflect the emotions of the words */
 .yelling {
     font-family: 'Merriweather', serif; /* Font style 1 */
     font-size: 1.1em; /* Slightly larger font size */
@@ -43,7 +43,7 @@ h3 { /* different rules for the headings above the lyrics to differenciate it be
 
 .reflective {
     font-family: 'Comfortaa', cursive; /* Font style 2 */
-    font-size: 0.8em; /* Smaller font size for introspection */
+    font-size: 0.8em; /* Smaller font size  */
     letter-spacing: -0.02em; /* Tighter letter spacing for closeness */
     font-weight: 300; /* Lighter weight for a gentle touch */
 }
@@ -98,11 +98,6 @@ main {
     padding: 20px 0; /* Add some vertical padding */
 }
 
-/* Ensure video is not exceeding the screen width on smaller devices */
-video {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
-}
 /* added visually hidden to hide headers that i didn't want to see but i had to remove warnings on validator for missing headers */
 .visually-hidden {
     position: absolute;
